@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Usuarios — TutoríaLink</title>
+  <link rel="stylesheet" href="src/estilos.css">
+  <script src="src/js/datos.js" defer></script>
+  <script src="src/js/utilidades.js" defer></script>
+  <script src="src/js/sesion.js" defer></script>
+  <script src="src/js/usuarios.js" defer></script>
+</head>
+<body data-roles="admin">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="topbar">
+    <a class="logo" href="index.html" aria-label="TutoríaLink, inicio">
+      <img src="src/assets/logo-tutorialink.jpeg" alt="TutoríaLink" width="240" height="60">
+    </a>
+    <button id="menu" type="button" aria-expanded="false" aria-controls="navegacion">Menú</button>
+    <!-- Los enlaces se muestran según el rol en sesion.js. -->
+    <nav id="navegacion" class="menu" aria-label="Navegación principal" hidden>
+      <a href="panel-estudiante.html" data-roles="estudiante">Panel</a>
+      <a href="panel-tutor.html" data-roles="tutor">Panel</a>
+      <a href="panel-admin.html" data-roles="admin">Resumen</a>
+      <a href="buscar.html" data-roles="estudiante">Buscar tutores</a>
+      <a href="disponibilidad.html" data-roles="tutor">Disponibilidad</a>
+      <a href="solicitudes.html" data-roles="estudiante tutor">Solicitudes</a>
+      <a href="calendario.html" data-roles="estudiante tutor">Calendario</a>
+      <a href="historial.html" data-roles="estudiante tutor">Historial</a>
+      <a href="usuarios.html" data-roles="admin">Usuarios</a>
+      <a href="materias.html" data-roles="admin">Materias</a>
+      <a href="registros.html" data-roles="admin">Registros</a>
+      <a href="mi-perfil.html" data-roles="estudiante tutor admin">Mi perfil</a>
+      <a href="ayuda.html" data-roles="estudiante tutor admin">Ayuda</a>
+      <a href="index.html" id="salir">Cerrar sesión</a>
+    </nav>
+  </header>
+  <div id="aviso" role="status" aria-live="polite" aria-atomic="true"></div>
+  <div id="error" class="mensaje-error" role="alert" aria-atomic="true" tabindex="-1"></div>
+  <noscript><p class="mensaje-error">Esta aplicación necesita JavaScript para iniciar sesión y guardar los formularios.</p></noscript>
+  <main id="contenido" class="contenido" tabindex="-1">
+<h1>Usuarios</h1>
+<p>Cuentas de ejemplo y registros de este navegador.</p>
+<section id="listaUsuarios" aria-label="Usuarios registrados"></section>
+  </main>
+</body>
+</html>

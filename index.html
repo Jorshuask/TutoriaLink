@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Iniciar sesión — TutoríaLink</title>
+  <link rel="stylesheet" href="src/estilos.css">
+  <script src="src/js/datos.js" defer></script>
+  <script src="src/js/utilidades.js" defer></script>
+  <script src="src/js/sesion.js" defer></script>
+  <script src="src/js/login.js" defer></script>
+</head>
+<body data-roles="publico">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="topbar">
+    <a class="logo" href="index.html" aria-label="TutoríaLink, inicio">
+      <img src="src/assets/logo-tutorialink.jpeg" alt="TutoríaLink" width="240" height="60">
+    </a>
+    <button id="menu" type="button" aria-expanded="false" aria-controls="navegacion">Menú</button>
+    <!-- Los enlaces se muestran según el rol en sesion.js. -->
+    <nav id="navegacion" class="menu" aria-label="Navegación principal" hidden>
+      <a href="panel-estudiante.html" data-roles="estudiante">Panel</a>
+      <a href="panel-tutor.html" data-roles="tutor">Panel</a>
+      <a href="panel-admin.html" data-roles="admin">Resumen</a>
+      <a href="buscar.html" data-roles="estudiante">Buscar tutores</a>
+      <a href="disponibilidad.html" data-roles="tutor">Disponibilidad</a>
+      <a href="solicitudes.html" data-roles="estudiante tutor">Solicitudes</a>
+      <a href="calendario.html" data-roles="estudiante tutor">Calendario</a>
+      <a href="historial.html" data-roles="estudiante tutor">Historial</a>
+      <a href="usuarios.html" data-roles="admin">Usuarios</a>
+      <a href="materias.html" data-roles="admin">Materias</a>
+      <a href="registros.html" data-roles="admin">Registros</a>
+      <a href="mi-perfil.html" data-roles="estudiante tutor admin">Mi perfil</a>
+      <a href="ayuda.html" data-roles="estudiante tutor admin">Ayuda</a>
+      <a href="index.html" id="salir">Cerrar sesión</a>
+    </nav>
+  </header>
+  <div id="aviso" role="status" aria-live="polite" aria-atomic="true"></div>
+  <div id="error" class="mensaje-error" role="alert" aria-atomic="true" tabindex="-1"></div>
+  <noscript><p class="mensaje-error">Esta aplicación necesita JavaScript para iniciar sesión y guardar los formularios.</p></noscript>
+  <main id="contenido" class="contenido" tabindex="-1">
+<section class="tarjeta acceso">
+  <h1>Iniciar sesión</h1>
+  <p>Accede a tu espacio de TutoríaLink.</p>
+  <form id="login">
+    <label for="usuario">Usuario <span class="obligatorio">(obligatorio)</span></label>
+    <input id="usuario" name="usuario" autocomplete="username" required aria-describedby="usuariosAyuda">
+    <p id="usuariosAyuda" class="muted">Usuarios: estudiante, admin o tutor.</p>
+    <label for="clave">Contraseña <span class="obligatorio">(obligatorio)</span></label>
+    <input id="clave" name="clave" type="password" autocomplete="current-password" required>
+    <button class="btn" type="submit">Iniciar sesión</button>
+  </form>
+  <p class="enlace-registro"><a href="registro.html">Crear cuenta</a></p>
+</section>
+  </main>
+</body>
+</html>

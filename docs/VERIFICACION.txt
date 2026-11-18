@@ -1,0 +1,33 @@
+VERIFICACIÓN REALIZADA: 15 de noviembre de 2026
+Navegador: Microsoft Edge en modo headless con Playwright.
+Correcto: búsqueda de tres tutores; filtro por Programación; solicitud a Ana; persistencia después de recargar; aceptación del tutor; listado en calendario; alta de materia; restricción de vistas mediante navegación del frontend.
+Correcto: sin desplazamiento horizontal en 390, 768 y 1366 px; menú móvil abre y actualiza aria-expanded.
+Correcto: sin errores JavaScript en los recorridos; node --check sin errores.
+Capturas: docs/capturas/escritorio.png y movil.png.
+Pendiente manual: lector de pantalla, zoom al 200 %, recorrido completo de teclado, navegadores adicionales y revisión del equipo.
+Los tests se ejecutan con Python y Playwright instalado y Edge disponible: python verificar.py. Usan un perfil temporal aislado y datos ficticios.
+
+ACTUALIZACIÓN: acceso y diseño solicitados por el usuario.
+Pruebas correctas en Edge: estudiante, tutor y admin con cualquier contraseña no vacía; usuario desconocido rechazado; cierre de sesión y persistencia al recargar; contraseña no conservada.
+Logo cargado; barra de demostración y pie eliminados; enlaces de navegación sin borde inferior.
+Disponibilidad: selección de días y horarios persistente, al menos un día obligatorio; filtros y formularios usan los días guardados; fecha fuera de disponibilidad rechazada.
+Regresión correcta: búsqueda, solicitud, aceptación, calendario, materias y adaptación a 390/768/1366 px. Sin errores JavaScript.
+Capturas actualizadas y nuevas capturas de login y disponibilidad en docs/capturas.
+
+ACTUALIZACIÓN: registro, perfil y materias del tutor.
+Pruebas correctas en Edge: bloque de accesos del panel eliminado; formulario de registro rechaza contraseñas diferentes, guarda cuenta local sin contraseña y vuelve al acceso; perfil del tutor exige una materia y conserva la selección tras recargar; una materia nueva del catálogo se puede asignar al tutor, buscar y solicitar.
+Regresión del resto de los recorridos y responsive correcta, sin errores JavaScript. Revisión documental del sitemap y del formato de entrega en docs/Revision de pantallas y entrega.md.
+
+ACTUALIZACIÓN VISUAL Y DOCUMENTAL
+Formularios de perfil y disponibilidad reorganizados sin tarjetas anidadas; campos y listas simples, con adaptación móvil. Pruebas funcionales completas repetidas tras el cambio: correctas. Capturas nuevas de ambos formularios en escritorio y móvil. PDF regenerado (10 páginas), abierto y revisado; fuentes, capturas y anexo incluidos. README e instrucciones de GitHub preparados.
+
+16-11-2026: REORGANIZACIÓN PARA PRINCIPIANTES
+17 HTML independientes con contenido escrito en cada archivo. Scripts de pantalla separados y funciones tradicionales, sin funciones flecha. Enlaces locales y sintaxis de todos los JS comprobados.
+Pruebas en Edge sobre servidor HTTP local temporal: acceso no autorizado redirige, registro sin guardar contraseñas, sesión entre páginas y recargas, tres paneles, filtros, solicitud, rechazo de horario duplicado, aceptación, bloqueo de seguimiento antes del final, calendario, administración, días y materias persistentes, selección de materias en búsquedas y solicitudes, cierre de sesión. Sin errores JavaScript.
+Sin desbordamiento horizontal en los recorridos a 390, 768 y 1366 px; nuevas capturas. PDF y Word regenerados con descripción de la estructura multipágina.
+El servidor temporal se detiene al finalizar la prueba. No se ha subido automáticamente esta versión a GitHub.
+
+16-11-2026: ACCESIBILIDAD, RÚBRICA Y GITHUB PAGES
+Errores asociados a campos y anunciados como alertas; obligatoriedad visible; nombres accesibles con contexto; foco conservado tras cambios; menú móvil con Escape; soporte de colores forzados.
+Regresión funcional completa correcta. axe-core 4.10.3: 24 evaluaciones en 17 páginas, cero violaciones automáticas. Seis evaluaciones con contraste no concluyente requieren revisión manual. Teclado probado para salto al contenido, inicio, error y menú móvil; reflow a 320 px con texto espaciado.
+Prueba bajo /TutoriaLink/, rechazando rutas fuera del prefijo: correcta. .nojekyll añadido. Informe PDF/Word y matriz de rúbrica actualizados. Persisten pendientes de sitemap, revisión manual con lector real e integración de historial con el repositorio del equipo. No se ha hecho push ni activado Pages en esta revisión.

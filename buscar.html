@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Buscar tutor — TutoríaLink</title>
+  <link rel="stylesheet" href="src/estilos.css">
+  <script src="src/js/datos.js" defer></script>
+  <script src="src/js/utilidades.js" defer></script>
+  <script src="src/js/sesion.js" defer></script>
+  <script src="src/js/buscar.js" defer></script>
+</head>
+<body data-roles="estudiante">
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="topbar">
+    <a class="logo" href="index.html" aria-label="TutoríaLink, inicio">
+      <img src="src/assets/logo-tutorialink.jpeg" alt="TutoríaLink" width="240" height="60">
+    </a>
+    <button id="menu" type="button" aria-expanded="false" aria-controls="navegacion">Menú</button>
+    <!-- Los enlaces se muestran según el rol en sesion.js. -->
+    <nav id="navegacion" class="menu" aria-label="Navegación principal" hidden>
+      <a href="panel-estudiante.html" data-roles="estudiante">Panel</a>
+      <a href="panel-tutor.html" data-roles="tutor">Panel</a>
+      <a href="panel-admin.html" data-roles="admin">Resumen</a>
+      <a href="buscar.html" data-roles="estudiante">Buscar tutores</a>
+      <a href="disponibilidad.html" data-roles="tutor">Disponibilidad</a>
+      <a href="solicitudes.html" data-roles="estudiante tutor">Solicitudes</a>
+      <a href="calendario.html" data-roles="estudiante tutor">Calendario</a>
+      <a href="historial.html" data-roles="estudiante tutor">Historial</a>
+      <a href="usuarios.html" data-roles="admin">Usuarios</a>
+      <a href="materias.html" data-roles="admin">Materias</a>
+      <a href="registros.html" data-roles="admin">Registros</a>
+      <a href="mi-perfil.html" data-roles="estudiante tutor admin">Mi perfil</a>
+      <a href="ayuda.html" data-roles="estudiante tutor admin">Ayuda</a>
+      <a href="index.html" id="salir">Cerrar sesión</a>
+    </nav>
+  </header>
+  <div id="aviso" role="status" aria-live="polite" aria-atomic="true"></div>
+  <div id="error" class="mensaje-error" role="alert" aria-atomic="true" tabindex="-1"></div>
+  <noscript><p class="mensaje-error">Esta aplicación necesita JavaScript para iniciar sesión y guardar los formularios.</p></noscript>
+  <main id="contenido" class="contenido" tabindex="-1">
+<h1>Buscar tutor</h1>
+<p>Filtra por materia y disponibilidad.</p>
+<div class="layout">
+  <aside class="tarjeta">
+    <h2>Filtros</h2>
+    <form id="filtros">
+      <label for="materia">Materia</label>
+      <select id="materia"><option value="">Todas</option></select>
+      <label for="dia">Día</label>
+      <select id="dia">
+        <option value="">Cualquier día</option>
+        <option value="1">Lunes</option><option value="2">Martes</option>
+        <option value="3">Miércoles</option><option value="4">Jueves</option>
+        <option value="5">Viernes</option><option value="6">Sábado</option>
+        <option value="0">Domingo</option>
+      </select>
+      <label for="hora">Hora</label>
+      <select id="hora">
+        <option value="">Cualquier hora</option>
+        <option>14:00</option><option>15:00</option><option>16:00</option>
+        <option>17:00</option><option>18:00</option>
+      </select>
+      <button class="btn" type="submit">Buscar</button>
+    </form>
+  </aside>
+  <section aria-label="Resultados">
+    <p id="cantidad" role="status" aria-live="polite" aria-atomic="true"></p>
+    <div id="resultados"></div>
+  </section>
+</div>
+  </main>
+</body>
+</html>

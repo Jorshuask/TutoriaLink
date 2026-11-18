@@ -1,0 +1,25 @@
+- main:
+  - heading "Solicitar tutoría" [level=1]
+  - paragraph: "Tutor: Ana Rodríguez · duración: una hora"
+  - text: Materia (obligatorio)
+  - combobox "Materia (obligatorio)":
+    - option "Cálculo I" [selected]
+    - option "Cálculo II"
+    - option "Física I"
+  - text: Fecha (obligatorio)
+  - textbox "Fecha (obligatorio)"
+  - paragraph: "Días disponibles: Lunes, Martes, Miércoles, Jueves, Viernes"
+  - text: Horario (obligatorio)
+  - combobox "Horario (obligatorio)":
+    - option "14:00" [selected]
+    - option "15:00"
+  - text: Modalidad
+  - combobox "Modalidad":
+    - option "Virtual" [selected]
+    - option "Presencial"
+  - text: Motivo de la tutoría (obligatorio)
+  - textbox "Motivo de la tutoría (obligatorio)"
+  - paragraph: Escribe entre 10 y 500 caracteres.
+  - button "Enviar solicitud"
+  - link "Cancelar":
+    - /url: buscar.html

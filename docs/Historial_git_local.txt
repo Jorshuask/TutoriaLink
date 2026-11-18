@@ -1,0 +1,10 @@
+Evidencia del historial local de la carpeta de trabajo.
+No reconstruye fases anteriores ni acredita aportes individuales del equipo.
+La copia de entrega no contiene .git; integrar los cambios en el repositorio real.
+
+e5ba491 | 2026-11-16 00:14:20 -0500 | Codex | Separar pantallas HTML y simplificar JavaScript para principiantes
+3a027b7 | 2026-11-16 00:04:14 -0500 | Codex | Guardar ajustes visuales y documentacion previa a separar pantallas
+64b3a8e | 2026-11-15 23:45:29 -0500 | Codex | Agregar registro y materias del tutor y revisar alcance de entrega
+32333e4 | 2026-11-15 22:43:46 -0500 | Codex | Agregar acceso por usuario, logo y disponibilidad por dias
+448708c | 2026-11-15 21:40:26 -0500 | Codex | Preservar documentos y capturas como archivos binarios
+5981140 | 2026-11-15 21:40:13 -0500 | Codex | Implementar frontend sencillo de TutoriaLink para Fase 3

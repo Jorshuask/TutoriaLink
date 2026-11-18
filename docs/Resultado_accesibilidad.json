@@ -1,0 +1,192 @@
+{
+  "fecha": "2026-11-16",
+  "motor": "axe-core 4.10.3",
+  "navegador": "Microsoft Edge headless",
+  "simulacion_pages": "/TutoriaLink/",
+  "evaluaciones": 24,
+  "paginas_distintas": 17,
+  "evaluaciones_con_violaciones": 0,
+  "resultados": [
+    {
+      "pagina": "index.html",
+      "rol": "publico",
+      "violaciones": [],
+      "revisiones_manuales": []
+    },
+    {
+      "pagina": "registro.html",
+      "rol": "publico",
+      "violaciones": [],
+      "revisiones_manuales": []
+    },
+    {
+      "pagina": "ayuda.html",
+      "rol": "estudiante",
+      "violaciones": [],
+      "revisiones_manuales": []
+    },
+    {
+      "pagina": "buscar.html",
+      "rol": "estudiante",
+      "violaciones": [],
+      "revisiones_manuales": []
+    },
+    {
+      "pagina": "calendario.html",
+      "rol": "estudiante",
+      "violaciones": [],
+      "revisiones_manuales": []
+    },
+    {
+      "pagina": "historial.html",
+      "rol": "estudiante",
+      "violaciones": [],
+      "revisiones_manuales": []
+    },
+    {
+      "pagina": "mi-perfil.html",
+      "rol": "estudiante",
+      "violaciones": [],
+      "revisiones_manuales": [
+        {
+          "id": "color-contrast",
+          "descripcion": "Elements must meet minimum color contrast ratio thresholds",
+          "cantidad_nodos": 1
+        }
+      ]
+    },
+    {
+      "pagina": "panel-estudiante.html",
+      "rol": "estudiante",
+      "violaciones": [],
+      "revisiones_manuales": []
+    },
+    {
+      "pagina": "perfil-tutor.html?tutor=1",
+      "rol": "estudiante",
+      "violaciones": [],
+      "revisiones_manuales": []
+    },
+    {
+      "pagina": "solicitar.html?tutor=1",
+      "rol": "estudiante",
+      "violaciones": [],
+      "revisiones_manuales": [
+        {
+          "id": "color-contrast",
+          "descripcion": "Elements must meet minimum color contrast ratio thresholds",
+          "cantidad_nodos": 1
+        }
+      ]
+    },
+    {
+      "pagina": "solicitudes.html",
+      "rol": "estudiante",
+      "violaciones": [],
+      "revisiones_manuales": []
+    },
+    {
+      "pagina": "ayuda.html",
+      "rol": "tutor",
+      "violaciones": [],
+      "revisiones_manuales": []
+    },
+    {
+      "pagina": "calendario.html",
+      "rol": "tutor",
+      "violaciones": [],
+      "revisiones_manuales": [
+        {
+          "id": "color-contrast",
+          "descripcion": "Elements must meet minimum color contrast ratio thresholds",
+          "cantidad_nodos": 2
+        }
+      ]
+    },
+    {
+      "pagina": "disponibilidad.html",
+      "rol": "tutor",
+      "violaciones": [],
+      "revisiones_manuales": []
+    },
+    {
+      "pagina": "historial.html",
+      "rol": "tutor",
+      "violaciones": [],
+      "revisiones_manuales": []
+    },
+    {
+      "pagina": "mi-perfil.html",
+      "rol": "tutor",
+      "violaciones": [],
+      "revisiones_manuales": [
+        {
+          "id": "color-contrast",
+          "descripcion": "Elements must meet minimum color contrast ratio thresholds",
+          "cantidad_nodos": 1
+        }
+      ]
+    },
+    {
+      "pagina": "panel-tutor.html",
+      "rol": "tutor",
+      "violaciones": [],
+      "revisiones_manuales": []
+    },
+    {
+      "pagina": "solicitudes.html",
+      "rol": "tutor",
+      "violaciones": [],
+      "revisiones_manuales": [
+        {
+          "id": "color-contrast",
+          "descripcion": "Elements must meet minimum color contrast ratio thresholds",
+          "cantidad_nodos": 2
+        }
+      ]
+    },
+    {
+      "pagina": "ayuda.html",
+      "rol": "admin",
+      "violaciones": [],
+      "revisiones_manuales": []
+    },
+    {
+      "pagina": "materias.html",
+      "rol": "admin",
+      "violaciones": [],
+      "revisiones_manuales": []
+    },
+    {
+      "pagina": "mi-perfil.html",
+      "rol": "admin",
+      "violaciones": [],
+      "revisiones_manuales": [
+        {
+          "id": "color-contrast",
+          "descripcion": "Elements must meet minimum color contrast ratio thresholds",
+          "cantidad_nodos": 1
+        }
+      ]
+    },
+    {
+      "pagina": "panel-admin.html",
+      "rol": "admin",
+      "violaciones": [],
+      "revisiones_manuales": []
+    },
+    {
+      "pagina": "registros.html",
+      "rol": "admin",
+      "violaciones": [],
+      "revisiones_manuales": []
+    },
+    {
+      "pagina": "usuarios.html",
+      "rol": "admin",
+      "violaciones": [],
+      "revisiones_manuales": []
+    }
+  ],
+  "limite": "No certifica conformidad WCAG. Falta revisión con NVDA/VoiceOver, usuarios y ampliación real del navegador."
+}
